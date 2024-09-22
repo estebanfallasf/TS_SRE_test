@@ -1,4 +1,21 @@
 # 1. AWS Cloudfront + S3 bucket
+
+AWS credentials have been setup as follows:
+* Add AWS access and secret keys to `~/.aws/credentials`:
+```
+[default]
+aws_access_key_id     = accesskey
+aws_secret_access_key = secretkey
+```
+
+* AWS Provider has been defined accordingly in `provider.tf`
+```
+provider "aws" {
+  profile = "default"
+  region  = "${var.region}"
+}
+```
+ 
 Checkout the code and run these TF commands in the given order: 
 (about 3-4 minutes)
 
