@@ -43,6 +43,12 @@ vpc_a_id = "vpc-096db7220de34aa34"
 
 Ouputs with `URL_verify` prefix are there to easily check that image is blocked when trying to access via S3 links and only through the CF link it's accesible.
 
+> [!IMPORTANT]  
+> When testing is done, remove the resources from AWS
+```
+terraform destroy
+```
+
 # 2. Github status checker script
 Change directory into `check_github_status`  and run the following commands:
 ```
