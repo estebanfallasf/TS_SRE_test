@@ -29,3 +29,13 @@ output "URL_verify_image_serving" {
   value = "https://${module.cloud-front.cloudfront_domain_name}/Hello_World.png"
 
 }
+
+output "URL_verify_blocked_bucket_policy_primary" {
+  value = "https://${module.s3Primary.bucket_regional_domain_name}/Hello_World.png"
+
+}
+
+output "URL_verify_blocked_bucket_policy_failover" {
+  value = "https://${module.s3Failover.bucket_regional_domain_name}/Hello_World.png"
+
+}
